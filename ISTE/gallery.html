@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(8, 8, 8);
+            height: 75px;
+        }
+
+        li {
+            padding: 20px 30px;
+            display: table-cell;
+            text-align: center;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 17px;
+            letter-spacing: 1.5px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        li a:hover {
+            -moz-transition: all .3s ease-in-out;
+            -webkit-transition: all .3s ease-in-out;
+            -ms-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+        }
+
+
+
+        li {
+            position: relative;
+        }
+
+        li::after {
+            content: '';
+            display: block;
+            width: 0;
+            position: absolute;
+            left: 50%;
+            margin-top: 10px;
+            height: 2px;
+            background: #0077ff;
+            transition: cubic-bezier(.77, 0, .18, 1) 1s;
+        }
+
+        li:hover::after {
+            width: 80%;
+            left: 10%;
+        }
+
+        li {
+            transition: cubic-bezier(.77, 0, .18, 1) 1s;
+        }
+
+        #logo {
+            margin-left: 30px;
+            margin-top: 5px;
+        }
+
+
+
+
+
+
+        .header {
+            text-align: center;
+            padding: 32px;
+        }
+
+        .row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            padding: 0 4px;
+            background-color: black;
+        }
+
+
+        .column {
+            -ms-flex: 25%;
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+
+        @media screen and (max-width: 800px) {
+            .column {
+                -ms-flex: 50%;
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+
+        @media screen and (max-width: 600px) {
+            .column {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+    <title>ISTE</title>
+</head>
+
+<body>
+
+
+    <nav>
+        <ul>
+            <a href="index.html"><img src="images/logo.jpg" alt="" style="width: 130px;" id="logo"></a>
+            <li style="float: right;"><a href="#">Gallery</a></li>
+            <li style="float: right;"><a href="#">Our Team</a></li>
+            <li style="float: right;"><a href="#">Events</a></li>
+            <li style="float: right;"><a href="index.html">About Us</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="row">
+        <div class="column">
+            <img src="images/1.jpeg" style="width:100%">
+            <img src="images/2.jpg" style="width:100%">
+            <img src="images/3.jpg" style="width:100%">
+            <img src="images/4.jpeg" style="width:100%">
+            <img src="images/5.jpg" style="width:100%">
+            <img src="images/6.jpg" style="width:100%">
+            <img src="images/7.jpeg" style="width:100%">
+            <img src="images/33.jpeg" style="width:100%">
+            <img src="images/34.jpeg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="images/8.jpg" style="width:100%">
+            <img src="images/9.jpg" style="width:100%">
+            <img src="images/10.jpeg" style="width:100%">
+            <img src="images/11.jpg" style="width:100%">
+            <img src="images/12.jpg" style="width:100%">
+            <img src="images/13.jpeg" style="width:100%">
+            <img src="images/31.jpeg" style="width:100%">
+            <img src="images/32.jpg" style="width:100%">
+            <img src="images/35.jpg" style="width:100%">
+
+        </div>
+        <div class="column">
+            <img src="images/14.jpg" style="width:100%">
+            <img src="images/15.jpeg" style="width:100%">
+            <img src="images/16.jpeg" style="width:100%">
+            <img src="images/17.jpg" style="width:100%">
+            <img src="images/18.jpg" style="width:100%">
+            <img src="images/19.jpeg" style="width:100%">
+            <img src="images/20.jpg" style="width:100%">
+            <img src="images/36.jpeg" style="width:100%">
+
+
+        </div>
+        <div class="column">
+            <img src="images/21.jpg" style="width:100%">
+            <img src="images/22.jpeg" style="width:100%">
+            <img src="images/23.jpg" style="width:100%">
+            <img src="images/24.jpg" style="width:100%">
+            <img src="images/25.jpeg" style="width:100%">
+            <img src="images/26.jpg" style="width:100%">
+            <img src="images/30.jpeg" style="width:100%">
+            <img src="images/37.jpeg" style="width:100%">
+        </div>
+
+    </div>
+
+</body>
+
+</html>
